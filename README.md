@@ -1,0 +1,2 @@
+# puppetdemo
+Demo Puppet module
