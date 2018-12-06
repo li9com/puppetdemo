@@ -1,0 +1,17 @@
+{
+  "name": "li9-puppetdemo",
+  "version": "0.1.0",
+  "author": "Li9",
+  "summary": "Puppet demo module",
+  "license": "Apache 2.0",
+  "source": "https://github.com/li9com/puppetdemo",
+  "project_page": "https://github.com/li9com/puppetdemo",
+  "issues_url": "https://github.com/li9com/puppetdemo/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
