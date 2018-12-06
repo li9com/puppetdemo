@@ -1,0 +1,24 @@
+node {
+    stage("Checkout") {
+        checkout scm
+    }
+    stage("Syntax") {
+        sh "rake lint"
+        sh "puppet parser validate manifests/*.pp"
+    }
+    stage("Unit") {
+        sh "rake rspec"
+    }
+    stage("Build") {
+        sh "puppet module build ."
+    }
+    stage("DEV_ENV") {
+        echo "not implemented"
+    }
+    stage("QA_ENV") {
+        echo "not implemented"
+    }
+    stage("PROD_ENV") {
+        echo "not implemented"
+    }
+}
